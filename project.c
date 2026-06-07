@@ -1,73 +1,70 @@
-#include <stdio.h>
+#include<stdio.h>
+    typedef struct student{
+        int rollno;
+        char name[20];
+        float marks;
+        char course[20];
+    }student;
+    student arr[50];
+int main(){
+int menu;
+  int count =0;
+do{
+    printf("\n1.Add");
+    printf("\n2.View");
+    printf("\n3.delete");
+    printf("\n4.search");
+    printf("\n5.update");
+    printf("\n6.exit");
 
-typedef struct student
-{
-    int rollno;
-    char name[20];
-    float marks;
-    char course[20];
-} student;
+    printf("\nEnter menu:");
+    scanf("%d", &menu);
+    switch(menu){
+        case 1: 
+      
+    printf("\nEnter Roll No: ");
+    scanf("%d", &arr[count].rollno);
 
-student arr[50];
-int count = 0;
+    printf("\nEnter Name: ");
+    scanf(" %s", arr[count].name);
 
-int main()
-{
-    int menu;
-    do
-    {
-        printf("\n1. Add Student");
-        printf("\n2. View Students");
-        printf("\n3. Delete Student");
-        printf("\n4. Search Student");
-        printf("\n5. Update Student");
-        printf("\n6. Exit");
-        printf("\nEnter choice: ");
-        scanf("%d", &menu);
-        switch (menu)
-        {
-            switch (menu)
-            {
-            case 1:
-                printf("\nEnter Roll No: ");
-                scanf("%d", &arr[count].rollno);
-                printf("\nEnter Name: ");
-                scanf(" %[^\n]", arr[count].name);
-                printf("\nEnter Marks: ");
-                scanf("%f", &arr[count].marks);
-                printf("\nEnter Course: ");
-                scanf(" %[^\n]", arr[count].course);
-                count++;
-                printf("Student added successfully!");
-                break;
-            case 2:
-                if (count == 0)
-                {
-                    printf("\nNo students found!");
-                    break;
-                }
-                for (int i = 0; i < count; i++)
-                {
-                    printf("\n--- Student %d ---", i + 1);
-                    printf("\nRoll No: %d", arr[i].rollno);
-                    printf("\nName: %s", arr[i].name);
-                    printf("\nMarks: %.2f", arr[i].marks);
-                    printf("\nCourse: %s", arr[i].course);
-                }
-                break;
-            }
+    printf("\nEnter Marks: ");
+    scanf("%f", &arr[count].marks);
+
+    printf("\nEnter Course: ");
+    scanf("%s", arr[count].course);
+
+    count++; 
+
+    printf("Student added successfully!");
+
+    break;
+        
+        case 2:
+       for(int i=0; i<count; i++){
+    printf("\n%d", arr[i].rollno);
+
+    printf("\n%s", arr[i].name);
+
+    
+    printf("\n%f", arr[i].marks);
+
+    printf("\n%s", arr[i].course);
+       }
+
+        break;
         case 3:
-            break;
+        break;
         case 4:
-            break;
-        case 5:
-            break;
+        break;
+     case 5:
+     break;
         case 6:
-            printf("Exiting...");
-            break;
-        default:
-            printf("Invalid choice!");
-        }
-    } while (menu != 6);
-    return 0;
+     
+        break;
+        
+    
+    }
+}while(menu!=6);
+    
 }
