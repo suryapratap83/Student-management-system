@@ -7,14 +7,13 @@ built in C as my first BCA project.
 ## Status
 ## Features (building...)
 - [x] Project structure
-- [ ] Add student
-- [ ] View students
+- [x] Add student
+- [x] View students
 - [ ] Delete student
 - [ ] Search student
 - [ ] Update student
 - [ ] Separate functions
 - [ ] File handling
 - [ ] Login system
-- [x] Add student
-- [x] View students
+
  Work in progress...
