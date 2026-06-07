@@ -1,6 +1,6 @@
 # Student Management System in C
 
-## About
+## Aboutgi
 A console-based Student Management System
 built in C as my first BCA project.
 
