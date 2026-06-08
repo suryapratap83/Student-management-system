@@ -53,10 +53,40 @@ do{
        }
 
         break;
-        case 3:
+         case 3:{
+        int rollno;
+        printf("\nenter rollno");
+        scanf("%d", &rollno);
+        for(int i=0; i<count; i++){
+            if(arr[i].rollno==rollno){
+                for(int j=i; j<count-1; j++){
+                    arr[j]=arr[j+1];
+            }
+            count--;
+        }
+    }
+        printf("student deleted succesfully");
         break;
-        case 4:
+}
+        case 4:{
+            int  rollno;
+        printf("\nenter rollno");
+        scanf("%d", &rollno);
+        for(int i=0; i<count; i++){
+            if(arr[i].rollno==rollno){
+             printf("%d", arr[i].rollno);
+
+    printf("%s", arr[i].name);
+
+    
+    printf("%f", arr[i].marks);
+
+    printf(" %s", arr[i].course);
+        }
+    }
+       
         break;
+}
      case 5:
      break;
         case 6:
