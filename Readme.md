@@ -9,8 +9,8 @@ built in C as my first BCA project.
 - [x] Project structure
 - [x] Add student
 - [x] View students
-- [ ] Delete student
-- [ ] Search student
+- [x] Delete student
+- [x] Search student
 - [ ] Update student
 - [ ] Separate functions
 - [ ] File handling
