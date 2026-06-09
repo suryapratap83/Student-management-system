@@ -87,11 +87,37 @@ do{
        
         break;
 }
-     case 5:
-     break;
+     case 5:{
+           int  rollno;
+        printf("\nenter rollno");
+        scanf("%d", &rollno);
+        for(int i=0; i<count; i++){
+            if(arr[i].rollno==rollno){
+             
+    printf("\nEnter Roll No: ");
+    scanf("%d", &arr[i].rollno);
+
+    printf("\nEnter Name: ");
+    scanf(" %s", arr[i].name);
+
+    printf("\nEnter Marks: ");
+    scanf("%f", &arr[i].marks);
+
+    printf("\nEnter Course: ");
+    scanf("%s", arr[i].course);
+        }
+  
+}
+printf("student update succesfully");
+  break;
+
+     }
         case 6:
-     
+        printf("exiting....");
         break;
+        default :
+        printf("invalid choice");
+    
         
     
     }
