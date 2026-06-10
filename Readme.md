@@ -13,7 +13,7 @@ built in C as my first BCA project.
 - [x] Search student
 - [x] Update student
 - [x] Search student
-- [ ] Separate functions
+- [x] Separate functions
 - [ ] File handling
 - [ ] Login system
 
