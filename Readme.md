@@ -14,7 +14,7 @@ built in C as my first BCA project.
 - [x] Update student
 - [x] Search student
 - [x] Separate functions
-- [ ] File handling
+- [x] File handling
 - [ ] Login system
 
  Work in progress...
