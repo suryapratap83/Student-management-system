@@ -36,7 +36,31 @@ void loadFromFile() {
     fclose(fp);
 }
 
+int login() {
+    char username[20], password[20];
+    char correct_user[] = "Surya";
+    char correct_pass[] = "5432";
+    int attempts = 3;
 
+    printf("\n===== STUDENT MANAGEMENT SYSTEM =====");
+    while (attempts > 0) {
+        printf("\n\nUsername: ");
+        scanf("%s", username);
+        printf("Password: ");
+        scanf("%s", password);
+
+        if (strcmp(username, correct_user) == 0 && strcmp(password, correct_pass) == 0) {
+            printf("\nLogin successful! Welcome!");
+            return 1;
+        } else {
+            attempts--;
+            if (attempts > 0)
+                printf("Wrong credentials! %d attempts left.", attempts);
+        }
+    }
+    printf("\nToo many failed attempts. Exiting.");
+    return 0;
+}
 
 void addstudents() {
     printf("\nEnter Roll No: ");
@@ -120,9 +144,11 @@ void updatestudents() {
 }
 
 int main() {
-  
+    if (login() == 0) {
+        return 0;
+    }
 
-    loadFromFile();
+
 
     int menu;
     do {
