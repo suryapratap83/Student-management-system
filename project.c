@@ -148,7 +148,7 @@ int main() {
         return 0;
     }
 
-
+    loadFromFile();
 
     int menu;
     do {
