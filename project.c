@@ -38,8 +38,8 @@ void loadFromFile() {
 
 int login() {
     char username[20], password[20];
-    char correct_user[] = "Surya";
-    char correct_pass[] = "5432";
+    char correct_user[] = "admin";
+    char correct_pass[] = "1234";
     int attempts = 3;
 
     printf("\n===== STUDENT MANAGEMENT SYSTEM =====");
